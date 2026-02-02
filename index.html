@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Kingdom of Ashes : Born to Conquer</title>
+    <meta
+      name="description"
+      content="Page vitrine officielle de The Kingdom of Ashes : Born to Conquer, un A-RPG 2D dark fantasy en développement."
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b0c10;
+        --panel: #14161d;
+        --accent: #f3b562;
+        --text: #f7f0e6;
+        --muted: #9aa0a6;
+        --border: #2a2e38;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+        background: radial-gradient(circle at top, #1f2430 0%, var(--bg) 45%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      header {
+        padding: 64px 16px 32px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      .hero {
+        display: grid;
+        gap: 32px;
+        align-items: center;
+      }
+
+      .hero__title {
+        font-size: clamp(2.4rem, 4vw, 3.6rem);
+        font-weight: 800;
+        margin: 0 0 12px;
+      }
+
+      .hero__subtitle {
+        margin: 0 0 24px;
+        color: var(--muted);
+      }
+
+      .hero__cta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .button {
+        border-radius: 999px;
+        border: 1px solid var(--accent);
+        padding: 10px 20px;
+        font-weight: 600;
+        background: transparent;
+        color: var(--text);
+        transition: all 0.2s ease;
+      }
+
+      .button:hover {
+        background: var(--accent);
+        color: #1c1204;
+      }
+
+      .hero__image {
+        border-radius: 16px;
+        border: 1px solid var(--border);
+        background: var(--panel);
+        padding: 16px;
+      }
+
+      .hero__image img {
+        width: 100%;
+        border-radius: 12px;
+        display: block;
+      }
+
+      .section {
+        padding: 32px 0;
+      }
+
+      .section__title {
+        font-size: clamp(1.8rem, 3vw, 2.4rem);
+        margin-bottom: 12px;
+      }
+
+      .grid {
+        display: grid;
+        gap: 24px;
+      }
+
+      .card {
+        background: var(--panel);
+        border-radius: 16px;
+        padding: 24px;
+        border: 1px solid var(--border);
+      }
+
+      .card h3 {
+        margin-top: 0;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+
+      .list {
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 32px 0 48px;
+        background: #0a0b11;
+      }
+
+      .footer__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+      }
+
+      .footer__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: var(--panel);
+        color: var(--text);
+      }
+
+      .footer__link svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+      }
+
+      .language-block {
+        display: grid;
+        gap: 16px;
+      }
+
+      @media (min-width: 900px) {
+        .hero {
+          grid-template-columns: 1.1fr 0.9fr;
+        }
+
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .language-block {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container hero">
+        <div>
+          <p class="tag">A-RPG 2D · Dark Fantasy · Pixel Art</p>
+          <h1 class="hero__title">The Kingdom of Ashes : Born to Conquer</h1>
+          <p class="hero__subtitle">
+            Un A-RPG 2D indépendant où la conquête s’accompagne de choix douloureux, de royaumes brisés et de
+            secrets anciens.
+          </p>
+          <div class="hero__cta">
+            <a class="button" href="#recrutement">Rejoindre l’aventure</a>
+            <a class="button" href="#beta">Devenir bêta testeur</a>
+            <a class="button" href="#english">English version</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="logo.png" alt="Écran logo de The Kingdom of Ashes" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container language-block">
+          <div class="card">
+            <h2 class="section__title">Présentation (FR)</h2>
+            <p>
+              The Kingdom of Ashes est un action-RPG 2D en pixel art qui mélange exploration, combat nerveux et
+              décisions narratives lourdes de conséquences. Le projet est en développement et vise une immersion
+              sombre, inspirée par les contes tragiques et les empires déclinants.
+            </p>
+            <ul class="list">
+              <li>Combat rapide avec esquives, combos et compétences à débloquer.</li>
+              <li>Exploration de régions fracturées, chacune avec ses secrets et ses factions.</li>
+              <li>Choix déterminants qui influencent le destin des royaumes.</li>
+            </ul>
+          </div>
+          <div class="card" id="english">
+            <h2 class="section__title">Overview (EN)</h2>
+            <p>
+              The Kingdom of Ashes is a 2D pixel-art action RPG mixing exploration, fast-paced combat, and narrative
+              choices with lasting consequences. The project is in active development, aiming for a moody immersion
+              inspired by tragic tales and crumbling empires.
+            </p>
+            <ul class="list">
+              <li>Responsive combat with dodges, combos, and unlockable skills.</li>
+              <li>Exploration across fractured regions, each hiding secrets and factions.</li>
+              <li>Meaningful choices that shape the fate of the kingdoms.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="recrutement">
+        <div class="container grid">
+          <div class="card">
+            <h3>Recherche de talents</h3>
+            <p>
+              Pour donner vie à l’univers, je recherche des collaborateur·rice·s passionné·e·s par le pixel art et le
+              sound design.
+            </p>
+            <ul class="list">
+              <li>Graphic designer 2D pour les sprites et tilesets.</li>
+              <li>Sound designer pour les effets spéciaux.</li>
+              <li>Compositeur·rice pour les musiques.</li>
+            </ul>
+          </div>
+          <div class="card" id="beta">
+            <h3>Appel aux bêta testeurs</h3>
+            <p>
+              Vos retours sont essentiels pour améliorer en permanence le jeu. Rejoignez la communauté de bêta tests
+              afin de partager vos impressions, vos idées et vos ressentis sur l’expérience.
+            </p>
+            <p class="tag">Contactez-moi via les réseaux ou la newsletter.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <h3>Suivre le projet</h3>
+        <div class="footer__links">
+          <a class="footer__link" href="https://x.com" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M18.9 2H22l-7.7 8.8L23 22h-6.7l-5.2-6.6L5 22H2l8.3-9.5L1 2h6.8l4.7 6.1L18.9 2z"
+              />
+            </svg>
+            X.com
+          </a>
+          <a class="footer__link" href="https://itch.io" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4 6.5c0-1.4 1.1-2.5 2.5-2.5h11C19.9 4 21 5.1 21 6.5v5.3c0 4.7-3.8 8.5-8.5 8.5S4 16.5 4 11.8V6.5zm5 2.5v1.5h6V9H9zm0 3v1.5h6V12H9z"
+              />
+            </svg>
+            itch.io
+          </a>
+          <a class="footer__link" href="https://store.steampowered.com" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M11.9 2C6.9 2 3 5.7 2.1 10.4l5.4 2.2a2.9 2.9 0 0 0 2 2.8c1.6.7 3.4 0 4.1-1.6a3 3 0 0 0 .1-1.9l3.9-5.4a3.5 3.5 0 1 0-2.6-2.6l-5.3 3.9a2.9 2.9 0 0 0-2-.2L4 9.4C4.7 6 7.9 3.4 11.9 3.4c4.6 0 8.3 3.7 8.3 8.3 0 4.6-3.7 8.3-8.3 8.3-3.7 0-6.9-2.4-7.9-5.7l-1.4-.6C3.7 18.7 7.5 22 11.9 22 17.5 22 22 17.5 22 11.9S17.5 2 11.9 2z"
+              />
+            </svg>
+            Steam Wishlist
+          </a>
+          <a class="footer__link" href="mailto:newsletter@kingdom-of-ashes.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 5.5C3 4.1 4.1 3 5.5 3h13C19.9 3 21 4.1 21 5.5v13c0 1.4-1.1 2.5-2.5 2.5h-13C4.1 21 3 19.9 3 18.5v-13zm2.6.5 6.4 4.6L18.4 6H5.6zm12.9 2.2-6.5 4.7c-.4.3-1 .3-1.4 0L4.1 8.2V18.5c0 .3.1.5.4.5h13c.3 0 .5-.2.5-.5V8.2z"
+              />
+            </svg>
+            Newsletter
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
